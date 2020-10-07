@@ -20,7 +20,7 @@
 *.pem
 
 #My note   
-Шпаргалка.txt
+myNote.txt
 
 # debug
 npm-debug.log*
