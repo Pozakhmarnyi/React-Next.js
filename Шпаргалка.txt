@@ -1,0 +1,32 @@
+
+
+1 - npm run serve 
+щоб не запускати одночасно два скріпта, зробив свій скріпт "serve" - за допомогою 
+npm i -D concurrently         - і відповідно вписав в package.json - скрпіт  "serve": "concurrently \"npm run dev\" \"npm run mock\"", і те, що він запускає. 
+
+
+    1) npm run dev        (запускаю режим dev- від слова developer - розроблик + запускається локалхост)
+
+
+для коректного і динамічного відображення сторінки, як на сервері, так і на клієнті 
+
+npm install sass -- із коробки він не знає SASS, тому інсталюй
+
+
+    https://github.com/typicode/json-server
+    Добавив фейкову базу даних "db.json" + прикрутив в package.json до скріптів "mock": "json-server -w db.json -p 4200 -d 450"
+    настройки: 
+     --middlewares, -m  Paths to middleware files                           [array]
+     --port, -p         Set port                                    [default: 3000]   
+     --delay, -d        Add delay to responses (ms) 
+
+    2)  ---------->     npm run mock 
+
+
+
+  
+    Next - не Використовує Доступ до браузорного fetch  -тому, щоб
+     SEO - підтягувало те, що отримую із сервера, використовую 
+
+       https://www.npmjs.com/package/isomorphic-unfetch
+    $ npm install --save isomorphic-unfetch
