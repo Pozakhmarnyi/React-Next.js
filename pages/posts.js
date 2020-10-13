@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import MainLayout from "../components/MainLayout";
 import Link from "next/link";
-import { CircularProgress } from "@material-ui/core";
+import { CircularProgress, Container } from "@material-ui/core";
 
 export default function Posts({ posts: serverPosts }) {
   const [posts, setPosts] = useState(serverPosts);
@@ -26,21 +26,23 @@ export default function Posts({ posts: serverPosts }) {
       </MainLayout>
     );
   }
-  <h2></h2>;
+  
 
   return (
     <MainLayout title="Post Page">
-      <h1>Posts </h1>
-      <h3>I get posts from the database (provided by JSON Server)</h3>
-      <ul>
+      <Container>
+      <h1 className="center pt">Posts </h1>
+      <h3 className="center">I get posts from the database (in this case it is provided by its own JSON server)</h3>
+      <ul className="my_post ">
         {posts.map((post) => (
-          <li key={post.id}>
+          <li className="center" key={post.id}>
             <Link href={`/post/[id]`} as={`/post/${post.id}`}>
               <a>{post.title}</a>
             </Link>{" "}
           </li>
         ))}
       </ul>
+      </Container>
     </MainLayout>
   );
 }

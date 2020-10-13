@@ -18,15 +18,13 @@ body {
   justify-content: center;
 }
 .pt {
-  padding-top: 5rem;
+  padding-top: 3.5rem;
 }
 .size {
   font-size: 27px;
   white-space: 1px;
 }
-.p {
-  padding: 10px;
-}
+
 .about_text {
   padding: 25px;
 }
@@ -34,4 +32,11 @@ body {
 .about_text li {
   padding: 10px;
   list-style-type: none;
+}
+.my_post {
+  padding: 25px;
+  font-size: 18px;
+}
+.my_post li {
+  padding: 10px;
 }

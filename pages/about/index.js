@@ -24,7 +24,9 @@ export default function About({ date: title }) {
        <li> <i>And of course I did, I implemented it on this example.</i></li>
      </ul>
      
-     <div className="center"> <Button variant="outlined" onClick={linkClickHandler}>Go back to home</Button><Button variant="outlined" onClick={() => Router.push(("url", "/posts"))}>Go to posts</Button> 
+     <div className="center">
+        <Button variant="outlined" onClick={linkClickHandler}>Go back to home</Button>
+        <Button variant="outlined" onClick={() => Router.push(("url", "/posts"))}>Go to posts</Button> 
      </div>
      
      

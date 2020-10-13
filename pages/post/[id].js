@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import MainLayout from "../../components/MainLayout";
-import { useRouter } from "next/router";
+import Router, { useRouter  } from "next/router";
 import Link from "next/link";
-import { CircularProgress } from "@material-ui/core";
+import { CircularProgress, Container, Button } from "@material-ui/core";
 // імя файлу служить ключем. А за допомогою useRouter() -можемо діставати url і не тільки router.query.id
 
 export default function Post({ post: serverPost }) {
@@ -35,13 +35,23 @@ export default function Post({ post: serverPost }) {
   }
 
   return (
+  
     <MainLayout title={post.title}>
-      <h1>"{post.title}" </h1>
+      <Container>
+        <h1 className="center pt">"{post.title}" </h1>
       <hr />
-      <p>{post.body}</p>
-      <Link href={`/posts/`}>
-        <a>Back to all posts</a>
-      </Link>{" "}
+      <p>&ensp;&ensp;{post.body}</p>
+      <Button variant="outlined" color="primary" onClick={() => Router.push(("url", "/posts"))}>
+      Back to all posts
+      </Button>
+
+        {/* <Link href={`/posts/`}>
+          <a>Back to all posts</a>
+        </Link> */} 
+        {/* Особисті спостереження - Router.push бистріше відгукується ніж <Link> */}
+       
+      </Container>
+     
     </MainLayout>
   );
 }
