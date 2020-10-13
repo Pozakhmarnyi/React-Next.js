@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import MainLayout from "../../components/MainLayout";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import { CircularProgress } from "@material-ui/core";
 // імя файлу служить ключем. А за допомогою useRouter() -можемо діставати url і не тільки router.query.id
 
 export default function Post({ post: serverPost }) {
@@ -25,7 +26,10 @@ export default function Post({ post: serverPost }) {
   if (!post) {
     return (
       <MainLayout>
-        <p>Loading...</p>
+        <div className="center pt">
+          <CircularProgress />
+          <p className="red">Loading...</p>
+        </div>
       </MainLayout>
     );
   }

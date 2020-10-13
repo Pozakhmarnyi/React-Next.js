@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "serve": "concurrently \"npm run dev\" \"npm run mock\"",
-    "mock": "json-server -w db.json -p 4200 -d 1300"
+    "mock": "json-server -w db.json -p 4200"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.0",

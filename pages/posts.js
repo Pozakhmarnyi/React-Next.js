@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import MainLayout from "../components/MainLayout";
 import Link from "next/link";
+import { CircularProgress } from "@material-ui/core";
 
 export default function Posts({ posts: serverPosts }) {
   const [posts, setPosts] = useState(serverPosts);
@@ -18,7 +19,10 @@ export default function Posts({ posts: serverPosts }) {
   if (!posts) {
     return (
       <MainLayout>
-        <p className="red">Loading...</p>
+        <div className="center pt">
+          <CircularProgress />
+          <p className="red">Loading...</p>
+        </div>
       </MainLayout>
     );
   }

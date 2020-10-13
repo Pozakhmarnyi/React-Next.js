@@ -11,3 +11,27 @@ body {
 .bBig {
   font-size: large;
 }
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pt {
+  padding-top: 5rem;
+}
+.size {
+  font-size: 27px;
+  white-space: 1px;
+}
+.p {
+  padding: 10px;
+}
+.about_text {
+  padding: 25px;
+}
+
+.about_text li {
+  padding: 10px;
+  list-style-type: none;
+}

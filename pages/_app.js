@@ -6,7 +6,7 @@ export default function MyApp({ Component, pageProps }) {
     <>
       {" "}
       <NextNprogress
-        color="yellow"
+        color="darkblue"
         startPosition="0.3"
         stopDelayMs="200"
         height="3"
