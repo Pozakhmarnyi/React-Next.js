@@ -6,7 +6,6 @@ https://github.com/Pozakhmarnyi/React-Next.js/blob/master/watch%20this%20video%2
 
 ## Or look at the screenshots, but it's not so much fun...
 https://github.com/Pozakhmarnyi/React-Next.js/blob/master/page_About.jpg
-
 https://github.com/Pozakhmarnyi/React-Next.js/blob/master/page_post.jpg
 
 ## Getting Started
