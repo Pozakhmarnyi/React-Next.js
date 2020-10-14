@@ -2,9 +2,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Watch the video to see what this app looks like
 
+https://github.com/Pozakhmarnyi/React-Next.js/blob/master/watch%20this%20video%20-%20Speed%20switching%20between%20pages.mp4
 
-Watch the video to see what this app looks like
-
+## Or look at the screenshots, but it's not so much fun...
+https://github.com/Pozakhmarnyi/React-Next.js/blob/master/page_About.jpg
+https://github.com/Pozakhmarnyi/React-Next.js/blob/master/page_post.jpg
 
 ## Getting Started
 
