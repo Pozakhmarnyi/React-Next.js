@@ -5,7 +5,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 https://github.com/Pozakhmarnyi/React-Next.js/blob/master/watch%20this%20video%20-%20Speed%20switching%20between%20pages.mp4
 
 ## Or look at the screenshots, but it's not so much fun...
-https://github.com/Pozakhmarnyi/React-Next.js/blob/master/page_About.jpg /n
+https://github.com/Pozakhmarnyi/React-Next.js/blob/master/page_About.jpg 
+and more details
 https://github.com/Pozakhmarnyi/React-Next.js/blob/master/page_post.jpg
 
 ## Getting Started
