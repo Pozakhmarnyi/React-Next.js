@@ -1,0 +1,77 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.customStyle {
+  color: red;
+}
+
+.error {
+  color: darkred;
+}
+
+.bBig {
+  font-size: large;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pt {
+  padding-top: 3.5rem;
+}
+
+.size {
+  font-size: 27px;
+  white-space: 1px;
+}
+
+.about_text {
+  padding: 25px;
+}
+
+.about_text li {
+  padding: 10px;
+  list-style-type: none;
+}
+
+.my_post {
+  padding: 25px;
+  font-size: 18px;
+}
+
+.my_post li {
+  padding: 10px;
+}
+
+.button_Customized {
+  -webkit-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.button-label {
+  color: #07afaf;
+  font-size: 17px;
+}
+
+.button-label:hover {
+  color: #0483be;
+  color: cyan;
+}
+/*# sourceMappingURL=main.css.map */

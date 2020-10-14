@@ -17,6 +17,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+.column {
+  flex-direction: column;
+}
 .pt {
   padding-top: 3.5rem;
 }
@@ -39,4 +42,17 @@ body {
 }
 .my_post li {
   padding: 10px;
+}
+
+.button_Customized {
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.button-label {
+  color: rgb(7, 175, 175);
+  font-size: 17px;
+}
+
+.button-label:hover {
+  color: rgb(4, 131, 190);
 }

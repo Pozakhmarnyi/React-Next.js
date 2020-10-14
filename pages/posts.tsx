@@ -3,8 +3,14 @@ import { useRouter } from "next/router";
 import MainLayout from "../components/MainLayout";
 import Link from "next/link";
 import { CircularProgress, Container } from "@material-ui/core";
+import {MyPost} from "../interfaces/post"
+import { NextPageContext } from "next";
 
-export default function Posts({ posts: serverPosts }) {
+interface PostPageProps{
+  posts: MyPost[];
+}
+
+export default function Posts({ posts: serverPosts }: PostPageProps) {
   const [posts, setPosts] = useState(serverPosts);
   useEffect(() => {
     async function load() {
@@ -16,6 +22,9 @@ export default function Posts({ posts: serverPosts }) {
       load();
     }
   }, []);
+
+  
+
   if (!posts) {
     return (
       <MainLayout>
@@ -51,12 +60,13 @@ export default function Posts({ posts: serverPosts }) {
 // getInitialPropsвключает рендеринг на стороне сервера и позволяет выполнять начальное заполнение данных ,
 //  что означает отправку страницы с данными, уже заполненными с сервера. Это особенно полезно для SEO .
 
-Posts.getInitialProps = async ({ req }) => {
+Posts.getInitialProps = async ({ req }: NextPageContext) => {
   if (!req) {
     return { posts: null };
   }
+  
   const response = await fetch("http://localhost:4200/posts");
-  const posts = await response.json();
+  const posts: MyPost[] = await response.json();
 
   return {
     posts: posts,

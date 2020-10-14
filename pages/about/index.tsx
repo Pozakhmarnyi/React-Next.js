@@ -1,13 +1,20 @@
 import Router from "next/router";
 import MainLayout from "../../components/MainLayout";
 import { Container, Button } from "@material-ui/core";
+import { MyPost } from "../../interfaces/post";
 
 // для навігації - при виклику подій
 
-export default function About({ date: title }) {
+interface PostPageProps {
+  date: MyPost
+}
+
+
+export default function About({ date: title }: PostPageProps) {
   const linkClickHandler = () => {
-    Router.push(("url", "/"));
+    Router.push(("/"))
   };
+
 
   // Router.push(("url", "/"));  - якщо без двойних дужок, то тупить \ БЕЗ динаміки
 
@@ -25,8 +32,8 @@ export default function About({ date: title }) {
      </ul>
      
      <div className="center">
-        <Button variant="outlined" onClick={linkClickHandler}>Go back to home</Button>
-        <Button variant="outlined" onClick={() => Router.push(("url", "/posts"))}>Go to posts</Button> 
+        <Button classes={{ root: 'button_Customized', label: 'button-label' }} onClick={linkClickHandler}>Go back to home</Button>
+        <Button classes={{ root: 'button_Customized', label: 'button-label' }} onClick={() => Router.push(("/posts"))}>Go to posts</Button> 
      </div>
      
      
@@ -37,7 +44,7 @@ export default function About({ date: title }) {
 
 About.getInitialProps = async () => {
   const response = await fetch("http://localhost:4200/about");
-  const data = await response.json();
+  const date: MyPost = await response.json();
 
-  return { date: data.title };
+  return { date: date.title };
 };

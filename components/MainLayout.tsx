@@ -33,18 +33,18 @@ export default function MainLayout({ children, title = "Next App" }) {
           left: 0;
           right: 0;
           top: 0;
-          background: rgb(235, 235, 235);
+          background: black;
           display: flex;
           justify-content: space-around;
           align-items: center;
         }
         nav a {
-          color: black;
+          color: white;
           text-decoration: none;
-          font-size: 21px;
+          font-size: 23px;
         }
         nav a:hover {
-          color: darkblue;
+          color: aqua;        
         }
         main {
           margin-top: 60px;
